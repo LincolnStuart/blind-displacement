@@ -6,7 +6,6 @@ void setup(){
   pinMode(pinTrigger, OUTPUT);
   pinMode(pinEcho, INPUT);
   pinMode(pinSpeaker, OUTPUT);
-  Serial.begin(9600);
 }
 
 void loop(){
@@ -32,6 +31,4 @@ void loop(){
   } else {
     digitalWrite(pinSpeaker, LOW);
   }
-  Serial.print(distance);
-  Serial.println(" cm");
 }
